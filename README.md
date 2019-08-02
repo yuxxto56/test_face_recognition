@@ -11,3 +11,33 @@
   安装成功,则也一并安装了numpy、face-recognition-models、dlib等依赖库
 ```
 ### 人脸对比场景
+
+结合已经封装的face.py文件
+* 对比不同人
+ ```
+   1、输入
+   face = faceHandler('images')
+   kownImgEncoding = face.getImgEncoding('sun1.jpg')
+   unkownImgEncodeing = face.getImgEncoding('sun2.jpg')
+   result = face.compareImg(kownImgEncoding,unkownImgEncodeing)
+   print(result)
+   2、输出
+   The test image has a distance of 0.44 from known image #0
+   - With a normal cutoff of 0.6, would the test image match the known image? True
+   - With a very strict cutoff of 0.5, would the test image match the known image? True
+   True #结果通过
+ ```
+* 对比不同人
+ ```
+   1、输入
+   face = faceHandler('images')
+   kownImgEncoding = face.getImgEncoding('sun1.jpg')
+   unkownImgEncodeing = face.getImgEncoding('gem1.jpg')
+   result = face.compareImg(kownImgEncoding,unkownImgEncodeing)
+   print(result)
+   2、输出
+  The test image has a distance of 0.56 from known image #0
+  - With a normal cutoff of 0.6, would the test image match the known image? True
+  - With a very strict cutoff of 0.5, would the test image match the known image? False
+  False #结果不通过
+ ```
