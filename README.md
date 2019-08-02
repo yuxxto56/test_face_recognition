@@ -7,5 +7,7 @@
   pip install cmake
   2、安装face-recognition
   pip install face-recognition --timeout=1000 #此过程安装比较长,耐心等待
+  ##备注
+  安装成功,则也一并安装了numpy、face-recognition-models、dlib等依赖库
 ```
 ### 人脸对比场景
