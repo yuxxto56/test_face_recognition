@@ -15,26 +15,26 @@ class faceHandler(object):
     初始化,图片目录名称
     '''
     def __init__(self,imgDir):
-       self._imgDir = imgDir
+        self._imgDir = imgDir
 
     '''
        获取图片目录路径
     '''
     def _getImgPath(self):
-       abspath = os.path.abspath('.')
-       return os.path.join(abspath,self._imgDir)
+        abspath = os.path.abspath('.')
+        return os.path.join(abspath,self._imgDir)
    
     '''
        获取目标图片的特征值
        @rteurn numpy array
     '''
     def getImgEncoding(self,imgName):
-       numpyImg = face_recognition.load_image_file(self._getImgPath()+"/"+imgName)
-       try:
-         imgEncoding = face_recognition.face_encodings(numpyImg)[0]
-       except Exception as e:
-         imgEncoding = []
-       return imgEncoding 
+        numpyImg = face_recognition.load_image_file(self._getImgPath()+"/"+imgName)
+        try:
+          imgEncoding = face_recognition.face_encodings(numpyImg)[0]
+        except Exception as e:
+          imgEncoding = []
+        return imgEncoding 
 
     '''
       对比图片是否为本人
