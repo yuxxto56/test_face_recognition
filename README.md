@@ -12,7 +12,7 @@
 ```
 ### 人脸对比场景
 
-结合已经封装的face.py文件
+结合已经封装的[face.py](https://github.com/yuxxto56/test_face_recognition/blob/master/face.py)文件
 * 对比相同人
  ```
    1、输入
