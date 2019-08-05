@@ -13,7 +13,7 @@
 ### 人脸对比场景
 
 结合已经封装的face.py文件
-* 对比不同人
+* 对比相同人
  ```
    1、输入
    face = faceHandler('images')
