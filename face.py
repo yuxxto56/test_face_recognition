@@ -4,6 +4,11 @@
 import face_recognition
 import os
 
+'''
+__AUTHOR__ = liyang
+
+'''
+
 ''' 计算欧式距离
 x=np.random.random(3)
 y=np.random.random(3)
